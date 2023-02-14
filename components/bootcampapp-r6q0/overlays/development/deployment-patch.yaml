@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: bootcampapp-r6q0
+  namespace: utherp0-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:06c81ab588d6c036d2a3a7994e6fed29e454f3a98d3bad7d57e791e043a8c83d
+        name: container-image
+        resources: {}
+status: {}
