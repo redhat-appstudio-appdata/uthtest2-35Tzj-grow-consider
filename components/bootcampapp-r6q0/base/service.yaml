@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: bootcampapp-r6q0
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: bootcampapp-r6q0
+    app.kubernetes.io/part-of: uthtest2
+  name: bootcampapp-r6q0
+  namespace: utherp0-tenant
+spec:
+  ports:
+  - port: 8080
+    targetPort: 8080
+  selector:
+    app.kubernetes.io/instance: bootcampapp-r6q0
+status:
+  loadBalancer: {}
